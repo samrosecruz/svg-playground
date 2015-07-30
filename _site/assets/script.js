@@ -19,7 +19,6 @@ $(function() {
     $('#pc-loading-play').hide();
     $('#pc-loading-pause').show();;
 
-		//animate strokeOffeset desn't work with circle element - we need to use Snap.animate() rather than loadingCircle.animate()
 		globalAnimation = Snap.animate(strokeOffset, '0', function( value ){ 
 			loadingCircle.attr({ 'stroke-dashoffset': value })
 			}, (strokeOffset/circumf)*1500, mina.easein, function(){
@@ -30,11 +29,13 @@ $(function() {
 		);
 	});
 
+
 	function initLoading() {
 		loadingCircle.attr({
 			'stroke-dasharray': circumf+' '+circumf,
 			'stroke-dashoffset': circumf,
 		});
 	}
+
 });
 
