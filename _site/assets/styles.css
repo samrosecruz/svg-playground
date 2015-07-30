@@ -114,18 +114,7 @@ header h2 {
 .svg-loader-container #pc-loading-circle {
   stroke: #ededed;
   opacity: 1;
-  visibility: visible;
-  -webkit-transition: visibility 0s 0s;
-  -moz-transition: visibility 0s 0s;
-  -o-transition: visibility 0s 0s;
-  transition: visibility 0s 0s; }
-  .svg-loader-container #pc-loading-circle.fade-out {
-    opacity: 0;
-    visibility: hidden;
-    -webkit-transition: visibility 0s 0s;
-    -moz-transition: visibility 0s 0s;
-    -o-transition: visibility 0s 0s;
-    transition: visibility 0s 0s; }
+  visibility: visible; }
 .svg-loader-container #pc-loading-circle-filled {
   stroke: #50cf4a; }
 .svg-loader-container #pc-loading-pause, .svg-loader-container #pc-loading-play {
