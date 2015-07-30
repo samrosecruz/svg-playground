@@ -1,0 +1,135 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+* {
+  box-sizing: border-box; }
+
+html, body {
+  height: 100%; }
+
+html {
+  font-size: 16px; }
+
+body {
+  font-family: "Source Sans Pro", "Helvetica Neue", "Arial", sans-serif;
+  color: #3a3a3a; }
+
+h1 {
+  font-size: 3em;
+  margin-bottom: 30px; }
+
+h2 {
+  font-size: 2.5em;
+  margin-bottom: 50px; }
+
+h3 {
+  font-size: 1.5em;
+  line-height: 1.5; }
+
+h4 {
+  font-size: 1em; }
+
+h5 {
+  font-size: 0.9em; }
+
+h6 {
+  font-size: 0.7em; }
+
+p {
+  font-size: 1em;
+  line-height: 1.7; }
+
+* {
+  text-rendering: optimizeLegibility !important;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale !important; }
+
+.container {
+  width: 1170px;
+  margin: 0 auto;
+  padding: 0 15px; }
+
+header {
+  text-align: center;
+  margin: 150px 0 50px; }
+header h1 {
+  color: #41425A; }
+header h2 {
+  font-size: 1.2em;
+  color: #9DAFC3; }
+
+.svg-loader-container {
+  width: 90%;
+  max-width: 200px; }
+.svg-loader-container #svg-loader {
+  display: block;
+  overflow: hidden;
+  max-width: 100%; }
+.svg-loader-container #pc-loading-circle, .svg-loader-container #pc-loading-circle-filled {
+  stroke-width: 9; }
+.svg-loader-container #pc-loading-circle {
+  stroke: #ededed;
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: visibility 0s 0s;
+  -moz-transition: visibility 0s 0s;
+  -o-transition: visibility 0s 0s;
+  transition: visibility 0s 0s; }
+  .svg-loader-container #pc-loading-circle.fade-out {
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: visibility 0s 0s;
+    -moz-transition: visibility 0s 0s;
+    -o-transition: visibility 0s 0s;
+    transition: visibility 0s 0s; }
+.svg-loader-container #pc-loading-circle-filled {
+  stroke: #50cf4a; }
+.svg-loader-container #pc-loading-pause, .svg-loader-container #pc-loading-play {
+  fill: #3b4655;
+  cursor: pointer; }
+.svg-loader-container #pc-loading-pause {
+  pointer-events: none; }

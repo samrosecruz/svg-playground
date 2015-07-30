@@ -1,0 +1,43 @@
+.svg-loader-container {
+  & {
+    width: 90%;
+    max-width: 200px;
+  }
+
+  #svg-loader {
+    display: block;
+    overflow: hidden;
+    max-width: 100%;
+  }
+
+  #pc-loading-circle, #pc-loading-circle-filled {
+    stroke-width: 9;
+  }
+
+  #pc-loading-circle {
+    stroke: $grey;
+    opacity: 1;
+    visibility: visible;
+    @include transition(opacity .3s 0s, visibility 0s 0s);
+
+    &.fade-out {
+     opacity: 0;
+      visibility: hidden;
+      @include transition(opacity .3s 0s, visibility 0s 0s);
+    }
+  }
+
+  #pc-loading-circle-filled {
+    stroke: $teal;
+  }
+
+  #pc-loading-pause, #pc-loading-play {
+    fill: $dark-blue;
+    cursor: pointer;
+  }
+
+  #pc-loading-pause {
+    pointer-events: none;
+  }
+
+}

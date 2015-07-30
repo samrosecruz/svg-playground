@@ -1,0 +1,9 @@
+markdown: kramdown
+kramdown:
+  input: GFM
+
+gems:
+  - jekyll-haml
+
+exclude:
+  - vendor

@@ -1,0 +1,15 @@
+header {
+  & {
+    text-align: center;
+    margin: 150px 0 50px;
+  }
+
+  h1 {
+    color: $charcoal;
+  }
+
+  h2 {
+    font-size: 1.2em;
+    color: $bluish-grey;
+  }
+}

@@ -1,0 +1,48 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+html { 
+  font-size: 16px;
+}
+
+body {
+  font-family: $sans;
+  color: #3a3a3a;
+}
+
+h1 {
+  font-size: 3em;
+  margin-bottom: 30px;
+}
+
+h2 {
+  font-size: 2.5em;
+  margin-bottom: 50px;
+}
+
+h3 {
+  font-size: 1.5em;
+  line-height: 1.5;
+}
+
+h4 {
+  font-size: 1em;
+}
+
+h5 {
+  font-size: 0.9em;
+}
+
+h6 {
+  font-size: 0.7em;
+}
+
+p {
+  font-size: 1em;
+  line-height: 1.7;
+}
