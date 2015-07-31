@@ -1,0 +1,14 @@
+.item {
+  & {
+    width: 90%;
+    max-width: 100px;
+    float: left;
+  }
+
+  svg {
+    display: block;
+    overflow: hidden;
+    max-width: 100%;
+  }
+
+}

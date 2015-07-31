@@ -93,6 +93,15 @@ p {
   margin: 0 auto;
   padding: 0 15px; }
 
+.item {
+  width: 90%;
+  max-width: 100px;
+  float: left; }
+.item svg {
+  display: block;
+  overflow: hidden;
+  max-width: 100%; }
+
 header {
   text-align: center;
   margin: 150px 0 50px; }
@@ -102,13 +111,6 @@ header h2 {
   font-size: 1.2em;
   color: #9DAFC3; }
 
-.svg-loader-container {
-  width: 90%;
-  max-width: 200px; }
-.svg-loader-container #svg-loader {
-  display: block;
-  overflow: hidden;
-  max-width: 100%; }
 .svg-loader-container #pc-loading-circle, .svg-loader-container #pc-loading-circle-filled {
   stroke-width: 9; }
 .svg-loader-container #pc-loading-circle {
@@ -122,3 +124,17 @@ header h2 {
   cursor: pointer; }
 .svg-loader-container #pc-loading-pause {
   pointer-events: none; }
+
+.svg-trash-container #trash {
+  stroke-width: 11;
+  stroke: #3b4655;
+  cursor: pointer;
+  pointer-events: bounding-box; }
+.svg-trash-container #trash-cover {
+  transform: translateY(0px);
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s; }
+  .svg-trash-container #trash-cover.trash-open {
+    transform: translateY(-70px); }

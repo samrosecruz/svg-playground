@@ -1,0 +1,22 @@
+.svg-trash-container {
+  #trash {
+    stroke-width: 11;
+    stroke: $dark-blue;
+    cursor: pointer;
+    pointer-events: bounding-box;
+  }
+
+
+  #trash-cover {
+    transform: translateY(0px);
+    @include transition(all 0.5s);
+
+
+    &.trash-open {
+      transform: translateY(-70px);
+    }
+
+  }
+
+}
+

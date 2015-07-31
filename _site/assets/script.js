@@ -1,3 +1,21 @@
+// Trash Animation
+//
+//
+//
+$(function() {
+  var trashSvg = Snap('#trash');
+  var trashCover = trashSvg.select('#trash-cover');
+
+  trashSvg.click(function() {
+    trashCover.toggleClass("trash-open");
+  });
+}); 
+
+
+// Loading Animation
+//
+//
+//
 $(function() {
   var loaderSvg = Snap('#svg-loader');
 
@@ -9,6 +27,13 @@ $(function() {
 
 	//this variable will be used to store the loadingCircle animation object
 	var globalAnimation;
+
+	function initLoading() {
+		loadingCircle.attr({
+			'stroke-dasharray': circumf+' '+circumf,
+			'stroke-dashoffset': circumf,
+		});
+	}
 
 	initLoading();	
 
@@ -30,12 +55,4 @@ $(function() {
 	});
 
 
-	function initLoading() {
-		loadingCircle.attr({
-			'stroke-dasharray': circumf+' '+circumf,
-			'stroke-dashoffset': circumf,
-		});
-	}
-
 });
-
