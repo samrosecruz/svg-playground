@@ -136,10 +136,11 @@ header h2 {
 #pc-loading-pause,
 #pc-loading-play,
 #trash,
-#arrow-horizontal {
+#arrow-horizontal,
+#arrow-vertical {
   cursor: pointer;
   pointer-events: bounding-box; }
 
-#trash, #arrow-horizontal {
+#trash, #arrow-horizontal, #arrow-vertical {
   stroke-width: 11;
   stroke: #3b4655; }

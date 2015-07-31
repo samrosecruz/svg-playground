@@ -3,8 +3,8 @@
     <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <g id="arrow-horizontal">
             <g id="arrow-h" transform="translate(68.000000, 61.000000)">
-                <path d="M12.5,82.5 L155.625,82.5" id="arrow-body" stroke-linecap="square"></path>
-                <path d="M66.4824219,0 L0,82.0410156 L66.4824219,164.082031" id="arrow-head"></path>
+                <path d="M12.5,82.5 L155.625,82.5" id="arrow-body-h" stroke-linecap="square"></path>
+                <path d="M66.4824219,0 L0,82.0410156 L66.4824219,164.082031" id="arrow-head-h"></path>
             </g>
         </g>
     </g>
