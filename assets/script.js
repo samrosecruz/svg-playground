@@ -1,7 +1,5 @@
-// Trash Animation
-//
-//
-//
+////////// Trash Animation
+
 $(function() {
   var trashSvg = Snap('#trash');
   var trashCover = trashSvg.select('#trash-cover');
@@ -11,11 +9,18 @@ $(function() {
   });
 }); 
 
+//////// Arrow Horizontal
 
-// Loading Animation
-//
-//
-//
+$(function() {
+  var arrowHorizontalSvg = Snap('#arrow-horizontal');
+  var arrowHead = arrowHorizontalSvg.select('#arrow-head');
+
+  arrowHorizontalSvg.click(function() {
+    arrowHead.animate({d:"M101.4824219,0 L157,82.0410156 L101.4824219,164.082031"}, 300, mina.easein);
+  });
+}); 
+
+/////// Loading Animation
 $(function() {
   var loaderSvg = Snap('#svg-loader');
 

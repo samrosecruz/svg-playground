@@ -120,21 +120,26 @@ header h2 {
 .svg-loader-container #pc-loading-circle-filled {
   stroke: #50cf4a; }
 .svg-loader-container #pc-loading-pause, .svg-loader-container #pc-loading-play {
-  fill: #3b4655;
-  cursor: pointer; }
+  fill: #3b4655; }
 .svg-loader-container #pc-loading-pause {
   pointer-events: none; }
 
-.svg-trash-container #trash {
-  stroke-width: 11;
-  stroke: #3b4655;
-  cursor: pointer;
-  pointer-events: bounding-box; }
 .svg-trash-container #trash-cover {
   transform: translateY(0px);
-  -webkit-transition: all 0.5s;
-  -moz-transition: all 0.5s;
-  -o-transition: all 0.5s;
-  transition: all 0.5s; }
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out; }
   .svg-trash-container #trash-cover.trash-open {
     transform: translateY(-70px); }
+
+#pc-loading-pause,
+#pc-loading-play,
+#trash,
+#arrow-horizontal {
+  cursor: pointer;
+  pointer-events: bounding-box; }
+
+#trash, #arrow-horizontal {
+  stroke-width: 11;
+  stroke: #3b4655; }
