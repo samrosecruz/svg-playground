@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="291px" height="291px" viewBox="0 0 291 291" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.3 (12081) - http://www.bohemiancoding.com/sketch -->
+    <title>pages</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="pages" sketch:type="MSArtboardGroup" fill="#000000">
+            <g id="ios-browsers-outline" sketch:type="MSLayerGroup" transform="translate(58.000000, 58.000000)">
+                <g id="Group" sketch:type="MSShapeGroup">
+                    <path d="M0,36.4583333 L0,175 L138.496094,175 L138.496094,36.4583333 L0,36.4583333 L0,36.4583333 Z M131.204427,167.708333 L7.29166667,167.708333 L7.29166667,43.75 L131.204427,43.75 L131.204427,167.708333 L131.204427,167.708333 Z" id="Shape"></path>
+                    <path d="M175,0 L36.4583333,0 L36.4583333,29.1666667 L43.75,29.1666667 L43.75,7.29166667 L167.708333,7.29166667 L167.708333,131.25 L145.833333,131.25 L145.833333,138.541667 L175,138.541667 L175,0 Z" id="Shape"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

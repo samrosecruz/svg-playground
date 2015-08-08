@@ -107,6 +107,8 @@ p {
   -moz-justify-content: center;
   -o-justify-content: center;
   justify-content: center; }
+  .svg-items.-disabled g {
+    fill: #E6EAF1; }
 
 .item {
   width: 90%;
