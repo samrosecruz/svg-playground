@@ -1,7 +1,7 @@
 .svg-trash-container {
   #trash-cover {
     transform: translateY(0px);
-    @include transition(all 0.3s ease-out);
+    @include transition(all 0.3s $elastic);
 
 
     &.trash-open {

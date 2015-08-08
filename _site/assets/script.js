@@ -40,44 +40,84 @@ $(function() {
     }
   });
 }); 
-/////// Loading Animation
+
+///// Volume Animation
 $(function() {
-  var loaderSvg = Snap('#svg-loader');
+  var volumeSvg = Snap('#volume'),
+      volumeValue= volumeSvg.select('#volume-value');
 
-  var loadingCircle = loaderSvg.select('#pc-loading-circle-filled'),
-      loadingSvg = loaderSvg.select('#pc-loading-circle'),
-      playBtn = loaderSvg.select('#pc-loading-play'),
-      pauseBtn = loaderSvg.select('#pc-loading-pause'),
-      circumf = Math.PI*(loadingCircle.attr('r')*2);
+  volumeValue.addClass('hide');
 
-	//this variable will be used to store the loadingCircle animation object
-	var globalAnimation;
-
-	function initLoading() {
-		loadingCircle.attr({
-			'stroke-dasharray': circumf+' '+circumf,
-			'stroke-dashoffset': circumf,
-		});
-	}
-
-	initLoading();	
-
-  $('#pc-loading-pause').hide();;
-	
-  playBtn.click(function(){
-		var strokeOffset = loadingCircle.attr('stroke-dashoffset').replace('px', '');
-    $('#pc-loading-play').hide();
-    $('#pc-loading-pause').show();;
-
-		globalAnimation = Snap.animate(strokeOffset, '0', function( value ){ 
-			loadingCircle.attr({ 'stroke-dashoffset': value })
-			}, (strokeOffset/circumf)*1500, mina.easein, function(){
-				$('#pc-loading-circle-filled').fadeOut();
-        $('#pc-loading-play').show();
-        $('#pc-loading-pause').hide();;
-			}
-		);
-	});
+  volumeSvg.click(function() {
+    if (volumeSvg.hasClass('animated')) {
+      volumeValue.removeClass('show');
+      volumeSvg.removeClass('animated');
+    } else {
+      volumeValue.addClass('show');
+      volumeSvg.addClass('animated');
+    }
+  });
+}); 
 
 
-});
+/////// Checkbox Animation
+$(function() {
+  var checkboxSvg = Snap('#checkbox'),
+      checkmark = checkboxSvg.select('#check');
+
+  checkboxSvg.click(function() {
+    if (checkboxSvg.hasClass('animated')) {
+      checkmark.attr({ 'stroke-dasharray': '0, 160' })
+      checkboxSvg.removeClass('animated');
+      checkmark.addClass('hide');
+      checkmark.removeClass('show');
+    } else {
+      checkmark.attr({ 'stroke-dasharray': '130, 160' })
+      checkmark.addClass('show');
+      checkmark.removeClass('hide');
+      checkboxSvg.addClass('animated');
+    }
+  });
+
+}); 
+/// Loading Animation
+//$(function() {
+  //var loaderSvg = Snap('#svg-loader');
+
+  //var loadingCircle = loaderSvg.select('#pc-loading-circle-filled'),
+      //loadingSvg = loaderSvg.select('#pc-loading-circle'),
+      //playBtn = loaderSvg.select('#pc-loading-play'),
+      //pauseBtn = loaderSvg.select('#pc-loading-pause'),
+      //circumf = Math.PI*(loadingCircle.attr('r')*2);
+
+  //this variable will be used to store the loadingCircle animation object
+  //var globalAnimation;
+
+  //function initLoading() {
+    //loadingCircle.attr({
+      //'stroke-dasharray': circumf+' '+circumf,
+      //'stroke-dashoffset': circumf,
+    //});
+  //}
+
+  //initLoading();	
+
+  //$('#pc-loading-pause').hide();;
+  
+  //playBtn.click(function(){
+    //var strokeOffset = loadingCircle.attr('stroke-dashoffset').replace('px', '');
+    //$('#pc-loading-play').hide();
+    //$('#pc-loading-pause').show();;
+
+    //globalAnimation = Snap.animate(strokeOffset, '0', function( value ){ 
+      //loadingCircle.attr({ 'stroke-dashoffset': value })
+      //}, (strokeOffset/circumf)*1500, mina.easein, function(){
+        //$('#pc-loading-circle-filled').fadeOut();
+        //$('#pc-loading-play').show();
+        //$('#pc-loading-pause').hide();;
+      //}
+    //);
+  //});
+
+
+//});

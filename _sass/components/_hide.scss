@@ -1,0 +1,9 @@
+.hide {
+  opacity: 0;
+  @include transition(all 0.3s);
+}
+
+.show {
+  opacity: 1;
+  @include transition(all 0.3s);
+}

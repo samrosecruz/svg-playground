@@ -1,0 +1,67 @@
+#volume {
+  &.animated {
+    #vol-value-1 {
+      @include animation(move-vol-1 0.5s $elastic);
+    }
+    #vol-value-2 {
+      @include animation(move-vol-2 0.5s $elastic);
+    }
+    #vol-value-3 {
+      @include animation(move-vol-3 0.5s $elastic);
+    }
+  }
+}
+
+@-webkit-keyframes move-vol-1 {
+  0% { transform: translateX(-44px); }
+
+  100% { transform: translateX(0px); }
+}
+
+@-moz-keyframes move-vol-1 {
+  0% { transform: translateX(-44px); }
+
+  100% { transform: translateX(0px); }
+}
+
+@keyframes move-vol-1 {
+  0% { transform: translateX(-44px); }
+
+  100% { transform: translateX(0px); }
+}
+
+@-webkit-keyframes move-vol-2 {
+  0% { transform: translateX(-70px); }
+
+  100% { transform: translateX(0px); }
+}
+
+@-moz-keyframes move-vol-2 {
+  0% { transform: translateX(-70px); }
+
+  100% { transform: translateX(0px); }
+}
+
+@keyframes move-vol-2 {
+  0% { transform: translateX(-70px); }
+
+  100% { transform: translateX(0px); }
+}
+
+@-webkit-keyframes move-vol-3 {
+  0% { transform: translateX(-100px); }
+
+  100% { transform: translateX(0px); }
+}
+
+@-moz-keyframes move-vol-3 {
+  0% { transform: translateX(-100px); }
+
+  100% { transform: translateX(0px); }
+}
+
+@keyframes move-vol-3 {
+  0% { transform: translateX(-100px); }
+
+  100% { transform: translateX(0px); }
+}

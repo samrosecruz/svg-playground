@@ -3,3 +3,9 @@
   margin: 0 auto;
   padding: 0 15px;
 }
+
+.svg-items {
+  @include flexbox();
+  @include justify-content(center);
+
+}

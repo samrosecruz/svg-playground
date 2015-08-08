@@ -93,10 +93,25 @@ p {
   margin: 0 auto;
   padding: 0 15px; }
 
+.svg-items {
+  display: -webkit-box;
+  /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;
+  /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;
+  /* TWEENER - IE 10 */
+  display: -webkit-flex;
+  /* NEW - Chrome */
+  display: flex;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -o-justify-content: center;
+  justify-content: center; }
+
 .item {
   width: 90%;
   max-width: 100px;
-  float: left; }
+  margin: 0 50px; }
 .item svg {
   display: block;
   overflow: hidden;
@@ -126,21 +141,109 @@ header h2 {
 
 .svg-trash-container #trash-cover {
   transform: translateY(0px);
-  -webkit-transition: all 0.3s ease-out;
-  -moz-transition: all 0.3s ease-out;
-  -o-transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out; }
+  -webkit-transition: all 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  -moz-transition: all 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  -o-transition: all 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55); }
   .svg-trash-container #trash-cover.trash-open {
     transform: translateY(-70px); }
 
+#checkbox #check {
+  stroke: #50cf4a;
+  stroke-dasharray: 0, 160;
+  -webkit-transition: all 0.4s cubic-bezier(1, -0.21, 1, 0.53);
+  -moz-transition: all 0.4s cubic-bezier(1, -0.21, 1, 0.53);
+  -o-transition: all 0.4s cubic-bezier(1, -0.21, 1, 0.53);
+  transition: all 0.4s cubic-bezier(1, -0.21, 1, 0.53); }
+
+#volume.animated #vol-value-1 {
+  -webkit-animation: move-vol-1 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  -moz-animation: move-vol-1 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  -o-animation: move-vol-1 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  animation: move-vol-1 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55); }
+#volume.animated #vol-value-2 {
+  -webkit-animation: move-vol-2 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  -moz-animation: move-vol-2 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  -o-animation: move-vol-2 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  animation: move-vol-2 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55); }
+#volume.animated #vol-value-3 {
+  -webkit-animation: move-vol-3 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  -moz-animation: move-vol-3 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  -o-animation: move-vol-3 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  animation: move-vol-3 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55); }
+
+@-webkit-keyframes move-vol-1 {
+  0% {
+    transform: translateX(-44px); }
+  100% {
+    transform: translateX(0px); } }
+@-moz-keyframes move-vol-1 {
+  0% {
+    transform: translateX(-44px); }
+  100% {
+    transform: translateX(0px); } }
+@keyframes move-vol-1 {
+  0% {
+    transform: translateX(-44px); }
+  100% {
+    transform: translateX(0px); } }
+@-webkit-keyframes move-vol-2 {
+  0% {
+    transform: translateX(-70px); }
+  100% {
+    transform: translateX(0px); } }
+@-moz-keyframes move-vol-2 {
+  0% {
+    transform: translateX(-70px); }
+  100% {
+    transform: translateX(0px); } }
+@keyframes move-vol-2 {
+  0% {
+    transform: translateX(-70px); }
+  100% {
+    transform: translateX(0px); } }
+@-webkit-keyframes move-vol-3 {
+  0% {
+    transform: translateX(-100px); }
+  100% {
+    transform: translateX(0px); } }
+@-moz-keyframes move-vol-3 {
+  0% {
+    transform: translateX(-100px); }
+  100% {
+    transform: translateX(0px); } }
+@keyframes move-vol-3 {
+  0% {
+    transform: translateX(-100px); }
+  100% {
+    transform: translateX(0px); } }
 #pc-loading-pause,
 #pc-loading-play,
 #trash,
 #arrow-horizontal,
-#arrow-vertical {
+#arrow-vertical,
+#volume,
+#checkbox {
   cursor: pointer;
   pointer-events: bounding-box; }
 
-#trash, #arrow-horizontal, #arrow-vertical {
+#trash, #arrow-horizontal, #arrow-vertical, #checkbox {
   stroke-width: 11;
   stroke: #3b4655; }
+
+#volume {
+  fill: #3b4655; }
+
+.hide {
+  opacity: 0;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s; }
+
+.show {
+  opacity: 1;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s; }

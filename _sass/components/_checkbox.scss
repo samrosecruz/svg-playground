@@ -1,0 +1,7 @@
+#checkbox {
+  #check {
+    stroke: $teal;
+    stroke-dasharray: 0, 160;
+    @include transition(all 0.4s cubic-bezier(1, -0.21, 1, 0.53));
+  }
+}

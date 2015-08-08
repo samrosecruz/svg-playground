@@ -12,3 +12,89 @@
           transform: $transforms;
 }
 
+@mixin flexbox() {
+  display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;      /* TWEENER - IE 10 */
+  display: -webkit-flex;     /* NEW - Chrome */
+  display: flex;
+}
+
+@mixin flex-direction($value) {
+  -webkit-flex-direction: $value;
+     -moz-flex-direction: $value;
+       -o-flex-direction: $value;
+          flex-direction: $value;
+
+}
+
+@mixin flex-wrap($value) {
+  -webkit-flex-wrap: $value;
+     -moz-flex-wrap: $value;
+       -o-flex-wrap: $value;
+          flex-wrap: $value;
+
+}
+
+@mixin flex($values) {
+  -webkit-box-flex: $values;
+    -moz-box-flex:  $values;
+     -webkit-flex:  $values;
+         -ms-flex:  $values;
+             flex:  $values;
+
+}
+
+@mixin align-self($value) {
+  -webkit-align-self: $value;
+     -moz-align-self: $value;
+       -o-align-self: $value;
+          align-self: $value;
+}
+
+@mixin align-items($value) {
+  -webkit-align-items: $value;
+     -moz-align-items: $value;
+       -o-align-items: $value;
+          align-items: $value;
+}
+
+@mixin justify-content($value) {
+  -webkit-justify-content: $value;
+     -moz-justify-content: $value;
+       -o-justify-content: $value;
+          justify-content: $value;
+}
+
+@mixin animation($value) {
+  -webkit-animation: $value;
+     -moz-animation: $value;
+       -o-animation: $value;
+          animation: $value;
+}
+@mixin animation-name($name) {
+  -webkit-animation-name: $name;
+     -moz-animation-name: $name;
+       -o-animation-name: $name;
+          animation-name: $name;
+}
+@mixin animation-delay($delay) {
+  -webkit-animation-delay: $delay;
+     -moz-animation-delay: $delay;
+       -o-animation-delay: $delay;
+          animation-delay: $delay;
+}
+
+@mixin animation-duration($duration) {
+  -webkit-animation-duration: $duration;
+     -moz-animation-duration: $duration;
+       -o-animation-duration: $duration;
+          animation-duration: $duration;
+}
+
+@mixin animation-timing-function($timing) {
+  -webkit-animation-timing-function: $timing;
+     -moz-animation-timing-function: $timing;
+       -o-animation-timing-function: $timing;
+          animation-timing-function: $timing;
+}
