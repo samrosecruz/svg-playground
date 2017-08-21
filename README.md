@@ -1,4 +1,4 @@
 # svg-playground
-Practicing SVG animations with Snap.svg
+Practicing SVG animations
 
-[Checkout the Demo] (http://svg-playground.herokuapp.com/)
+[Checkout the Demo](http://svg-playground.herokuapp.com/)
